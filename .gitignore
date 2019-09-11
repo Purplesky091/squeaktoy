@@ -1,0 +1,5 @@
+# ignore the node_modules folder
+node_modules/
+
+# ignore the config.json so I don't upload discord bot token code up to github.
+config.json
