@@ -1,0 +1,5 @@
+TODO:
+1. Have queue just be a list of numbered tracks. Also have the list point to what is currently playing
+2. I want a pause button. 
+3. I want to be able to skip around on the playlist. Perhaps it should be able to remember where I was in the song
+ 

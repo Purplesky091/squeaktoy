@@ -1,6 +1,6 @@
 module.exports = {
 	name: 'skip',
-	description: 'Ends the current song and skips to the next.',
+	description: 'Ends the current song and skips to the next song in queue.',
 	execute(message, args) {
 		if(!message.member.voiceChannel)
 			return message.reply('You must be in a voice channel to skip to the next song.');

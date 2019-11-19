@@ -2,7 +2,7 @@ const ytdl = require('ytdl-core');
 
 module.exports = {
 	name: 'play',
-	description: 'Plays the song provided by the youtube link.',
+	description: 'Plays a song given by youtube url. If a song is already playing, then it will add the song to a queue.',
 	usage: '[youtube-url]',
 	args: true,
 	async execute(message, args) {

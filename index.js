@@ -45,8 +45,12 @@ client.on('message', async message => {
 	if (command.guildOnly && message.channel.type !== 'text')
 		return message.reply('This command does not work through DMs!');
 
-	try {
-		command.execute(message, args);
+	try {		
+		// start here. Where the actual command gets executed.
+		if (command.name === 'help')
+			command.execute(message, client.commands.values());
+		else
+			command.execute(message, args);
 	} catch (error) {
 		console.error(error);
 		message.reply('there was an error trying to execute that command!');
